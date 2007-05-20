@@ -1,8 +1,8 @@
 %define realname   Net-Rendezvous-Publish-Backend-Avahi
 
 Name:		perl-%{realname}
-Version:    0.02
-Release:    %mkrel 2
+Version:    0.03
+Release:    %mkrel 1 
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:    Publish zeroconf data with the Avahi library
