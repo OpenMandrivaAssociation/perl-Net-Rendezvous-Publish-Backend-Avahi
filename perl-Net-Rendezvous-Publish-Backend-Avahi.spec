@@ -8,6 +8,7 @@ Group:		Development/Perl
 Summary:    Publish zeroconf data with the Avahi library
 Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-Rendezvous-Publish-Backend-Avahi-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{realname}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	perl-devel
 Provides:   perl-Net-Rendezvous-Publish-Backend
 BuildArch: noarch
