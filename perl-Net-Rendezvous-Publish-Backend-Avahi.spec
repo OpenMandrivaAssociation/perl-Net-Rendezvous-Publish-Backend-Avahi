@@ -1,6 +1,5 @@
 %define upstream_name    Net-Rendezvous-Publish-Backend-Avahi
-%define upstream_version 0.03
-
+%define upstream_version 0.04
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.04
 Release:	1
