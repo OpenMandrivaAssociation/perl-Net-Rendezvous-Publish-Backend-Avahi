@@ -23,14 +23,14 @@ It is a backend for the Net::Rendezvous::Publish module.
 %setup -q -n Net-Rendezvous-Publish-Backend-Avahi-%{upstream_version}
 
 %build
-perl Makefile.PL INSTALLDIRS=vendor
-%make
+perl Build.PL installdirs=vendor
+./Build
 
 %check
 make test
 
 %install
-%makeinstall_std
+./Build install destdir=%{buildroot}
 
 %files
 %{perl_vendorlib}/Net/*
