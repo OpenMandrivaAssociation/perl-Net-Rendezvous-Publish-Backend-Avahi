@@ -13,6 +13,8 @@ Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Net/Net-Rendezvous-Pub
 
 BuildRequires:	perl-devel
 BuildRequires: perl(Module::Build)
+BuildRequires: perl(Net::DBus)
+BuildRequires: perl(Net::Rendezvous::Publish)
 Provides:	perl-Net-Rendezvous-Publish-Backend
 BuildArch:	noarch
 
