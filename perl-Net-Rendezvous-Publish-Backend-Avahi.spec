@@ -8,7 +8,7 @@ Release:	3
 Summary:	Publish zeroconf data with the Avahi library
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Net/Net-Rendezvous-Publish-Backend-Avahi-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
