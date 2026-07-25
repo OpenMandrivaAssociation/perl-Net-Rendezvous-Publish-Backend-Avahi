@@ -2,14 +2,14 @@
 %define upstream_version 0.04
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	Publish zeroconf data with the Avahi library
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Net/Net-Rendezvous-Publish-Backend-Avahi-%{upstream_version}.tar.gz
+Url:		https://github.com/ioanrogers/Net-Rendezvous-Publish-Backend-Avahi
+Source0:	https://cpan.metacpan.org/authors/id/I/IO/IOANR/Net-Rendezvous-Publish-Backend-Avahi-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires: perl(Module::Build)
