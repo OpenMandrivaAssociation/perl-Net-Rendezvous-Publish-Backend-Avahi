@@ -1,15 +1,13 @@
 %define upstream_name    Net-Rendezvous-Publish-Backend-Avahi
-%define upstream_version 0.04
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.04
+Release:	5
 
 Summary:	Publish zeroconf data with the Avahi library
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/ioanrogers/Net-Rendezvous-Publish-Backend-Avahi
-Source0:	https://cpan.metacpan.org/authors/id/I/IO/IOANR/Net-Rendezvous-Publish-Backend-Avahi-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/I/IO/IOANR/Net-Rendezvous-Publish-Backend-Avahi-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires: perl(Module::Build)
@@ -23,7 +21,7 @@ This module publishes zeroconf data with the Avahi library
 It is a backend for the Net::Rendezvous::Publish module.
 
 %prep
-%setup -q -n Net-Rendezvous-Publish-Backend-Avahi-%{upstream_version}
+%setup -q -n Net-Rendezvous-Publish-Backend-Avahi-%{version}
 
 %build
 perl Build.PL installdirs=vendor
@@ -43,9 +41,7 @@ perl Build.PL installdirs=vendor
 %changelog
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 0.30.0-1mdv2010.0
 + Revision: 406175
-- rebuild using %%perl_convert_version
-
-* Thu Jul 03 2008 Michael Scherer <misc@mandriva.org> 0.03-3mdv2009.0
+- rebuild using %0.04 Thu Jul 03 2008 Michael Scherer <misc@mandriva.org> 0.03-3mdv2009.0
 + Revision: 230902
 - rebuild
 - rebuild
